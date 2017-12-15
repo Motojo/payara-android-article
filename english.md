@@ -6,7 +6,7 @@ Do you ever wondered how micro is Payara micro?
 At first, this was a funny experiment installing a terminal app on my android phone and playing around with some linux commands.
 One thing lead to another and ended running a Payara Micro instance on my device. I gonna show you how to do that.
 
-For convenience you may want to do all this procces [using ssh into your device](https://termux.com/ssh.html) and your computer keyboard.
+For convenience you may want to do all this proccess [using ssh into your device](https://termux.com/ssh.html) and your computer keyboard.
 
 ## Installing Termux and a Linux distro.
 The best terminal app I found is [Termux](https://play.google.com/store/apps/details?id=com.termux). wich is an open source terminal emulator and linux enviroment.
@@ -33,7 +33,8 @@ yum install java-1.0.8-openjdk
 ```
 ![alt text](http://guate-jug.net/payara-android/5.png "instaling JDK")
 
-Fedora might want to update some dependencies before installing the JDK, so this will take a while. After installing the JDK we might to test the java version with _java -v_ and this probably will fail but don't worry, this is "normal" and doesn't affect our goal to run an instance of Payara Micro.
+Fedora might want to update some dependencies before installing the JDK, so this will take a while. 
+If you check java version with _java-v_ after installing the JDK it gonna fail so don’t worry about it, doesn't affect our goal to run an instance of Payara Micro.
 
 ## Downloading Payara Micro and and deploying an application.
 Let’s download the Payara Micro jar, just copy the link from [Payara website](https://www.payara.fish/downloads) and paste it into this command.
