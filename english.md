@@ -3,8 +3,7 @@
 
 Do you ever wondered how micro is Payara micro?
 
-At first, this was a funny experiment installing a terminal app on my android phone and playing around with some Linux commands.
-One thing lead to another and I ended running a Payara Micro instance on my device. I'm gonna show you how to do that.
+At first, this was a fun experiment installing a terminal app on my Android phone and playing around with some Linux commands. One thing lead to another and I ended running a Payara Micro instance on my device. I'm gonna show you how to do that.
 
 For convenience's sake you may want to run this experiment from the comfort of your PC by [connecting it via SSH to your device](https://termux.com/ssh.html).
 
