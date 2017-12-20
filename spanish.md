@@ -30,7 +30,7 @@ Ya dentro de nuestro entorno de **Fedora 27**, procederemos a instalar OpenJDK v
 
 ![alt text](http://guate-jug.net/payara-android/5.png "instaling JDK")
 
-Es posible que Fedora necesite actualizar algunas dependencias antes de instalar el JDK, asi que el proceso puede tardar un poco mas de lo esperado. Es posible que al terminar el proceso quieras verificar la instalación del JDK con el comando `java -v`, por lo que te darás cuenta de que probablemente falle; pero no te preocupes, esto es "normal" y no afecta nuestra meta de ejecutar una instancia de Payara Micro.
+Es posible que Fedora necesite actualizar algunas dependencias antes de instalar el JDK, asi que el proceso puede tardar un poco mas de lo esperado. Es posible que al terminar el proceso quieras verificar la instalación del JDK con el comando `java -version`, por lo que te darás cuenta de que probablemente falle; pero no te preocupes, esto es "normal" y no afecta nuestra meta de ejecutar una instancia de Payara Micro.
 
 ## Descargando Payara Micro y realizando el despliegue de una aplicación.
 
