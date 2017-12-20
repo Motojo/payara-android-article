@@ -40,7 +40,7 @@ Ahora, descarguemos el archivo JAR de Payara Micro. Para hacer esto, copiaremos 
 
 También es recomendable que descarguemos un archivo WAR [como este](https://www.dropbox.com/s/w573h7lajd9405w/Application.war?dl=1) para probar nuestro servidor.
 
-Este archivo WAR es una modificación de mi [Proyecto inicial de Java EE7 / Gradle](https://github.com/Motojo/Java-EE7-Starter-Project) que solo contiene una página `index.html` y 3 servicios web RESTful de pruebaÑ
+Este archivo WAR es una modificación de mi [Proyecto inicial de Java EE7 / Gradle](https://github.com/Motojo/Java-EE7-Starter-Project) que solo contiene una página `index.html` y 3 servicios web RESTful de prueba
 
 
     <host>:<port>/api
