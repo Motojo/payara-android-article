@@ -11,7 +11,7 @@ For convenience's sake you may want to run this experiment from the comfort of y
 
 The best terminal app I found is [Termux](https://play.google.com/store/apps/details?id=com.termux), which is an open source terminal emulator that provides a Linux environment. This means that you can install packages, run common Linux commands, and even configure startup processes when you boot up your phone. One of the most amazing things you can do with it is install community-made images of Linux's distributions like Arch, Debian, Fedora, Kali, Ubuntu, etc.
 
-However, even with Termux you can't install a JDK yet. After several tests, I installed [Fedora 27 in Termux](https://wiki.termux.com/wiki/Fedora) since I realized that is the most lightweight distribution for this requirement. To install it, just type the following commands in Termux ( use **f27_arm** or **f27_arm64** depending your device):
+However, even with Termux you can't install a JDK yet. After several tries, I installed [Fedora 27 in Termux](https://wiki.termux.com/wiki/Fedora) since I realized that is the most lightweight distribution for this requirement. To install it, just type the following commands in Termux ( use **f27_arm** or **f27_arm64** depending your device):
 
     pkg install wget
     wget https://raw.githubusercontent.com/nmilosev/termux-fedora/master/termux-fedora.sh
@@ -31,17 +31,17 @@ Now that we are inside of our **Fedora 27** environment, we are going to install
 ![alt text](http://guate-jug.net/payara-android/5.png "instaling JDK")
 
 Fedora might want to update some dependencies before installing the JDK, so this might take a while.
-If you check the Java version with `java -v` after installing the JDK, it will fail; so don’t worry about it since it doesn't affect our goal to run an instance of Payara Micro.
+If you check the Java version with `java -v` after installing the JDK, and you will notice that it will fail; so don’t worry about it since it doesn't affect our goal to run an instance of Payara Micro.
 
 ## Downloading Payara Micro and deploying an application.
 
-Let’s download the Payara Micro jar. To do this, just copy the distribution link from the [Payara website](https://www.payara.fish/downloads) and use it with the following command:
+Let’s download the Payara Micro JAR file. To do this, just copy the distribution link from the [Payara website](https://www.payara.fish/downloads) and use it with the following command:
 
     wget "<PAYARA_MICRO_DOWNLOAD_URL>" -O payara-micro.jar
 
 Is recommended to also download a WAR file like [this one](https://www.dropbox.com/s/w573h7lajd9405w/Application.war?dl=1) to test the server.
 
-This WAR is a modified project of my [JavaEE 7 / Gradle starter project](https://github.com/Motojo/Java-EE7-Starter-Project) with just an _index.html_ page and 3 sample RESTful web services:
+This WAR file is a modified project of my [JavaEE 7 / Gradle starter project](https://github.com/Motojo/Java-EE7-Starter-Project) with just an _index.html_ page and 3 sample RESTful web services:
 
     <host>:<port>/api
     <host>:<port>/api/list
@@ -55,7 +55,7 @@ Now that we have a JDK installed, the _payara-micro_ JAR file and a sample WAR a
 
 ![alt text](http://guate-jug.net/payara-android/8.png "all needed files")
 
-Depending on your device this will take several minutes, and may throw some exceptions, but your application will be deployed nonetheless.
+Depending on your device this will take several minutes, and may throw some exceptions (in some cases), but your application will be deployed nonetheless.
 
 In this case, the server is listening on port **8080** by default, so go to the device web browser and launch the http://localhost:8080 website:
 
@@ -69,7 +69,6 @@ In the case you want to show your new portable Payara server to your friends you
 
 To do this, you need to download the [ARM version](https://ngrok.com/download) and install it on your Termux terminal. Once installed you can open your server with the following command:
 
-
     ./ngrok http 8080
 
 Which will give you an URL to see your server from the Internet. Isn't it cool?
@@ -78,7 +77,7 @@ Which will give you an URL to see your server from the Internet. Isn't it cool?
 
 ## Final Notes
 
-At this time the steps to achieve all of this are a bit convoluted, so maybe in the future the entire process can be simplified to ease running a Payara server in your Phone.
+At this time, the steps to achieve all of this are a bit convoluted, so maybe in the future the entire process can be simplified to ease running a Payara Micro instance in your smartphone.
 
 Remember that all of this depends on your device specifications, which means that the server can run too slow or become unresponsive. Using my **Nexus 5X** smartphone, it took up to 5 minutes for the Payara Server's homepage to load, but on a separate tablet with more RAM the page loaded faster.
 
