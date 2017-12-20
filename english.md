@@ -9,7 +9,7 @@ For convenience's sake you may want to run this experiment from the comfort of y
 
 ## Installing Termux and a Linux distribution.
 
-The best terminal app I found is [Termux](https://play.google.com/store/apps/details?id=com.termux). which is an open source terminal emulator that provides a Linux environment. This means that you can install packages, run common Linux commands, and even configure startup processes when you boot up your phone. One of the most amazing things you can do with it is install community-made images of Linux's distributions like Arch, Debian, Fedora, Kali, Ubuntu, etc.
+The best terminal app I found is [Termux](https://play.google.com/store/apps/details?id=com.termux), which is an open source terminal emulator that provides a Linux environment. This means that you can install packages, run common Linux commands, and even configure startup processes when you boot up your phone. One of the most amazing things you can do with it is install community-made images of Linux's distributions like Arch, Debian, Fedora, Kali, Ubuntu, etc.
 
 However, even with Termux you can't install a JDK yet. After several tests, I installed [Fedora 27 in Termux](https://wiki.termux.com/wiki/Fedora) since I realized that is the most lightweight distribution for this requirement. To install it, just type the following commands in Termux ( use **f27_arm** or **f27_arm64** depending your device):
 

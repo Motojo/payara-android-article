@@ -1,14 +1,15 @@
 
-# Payara Micro en Android (Sin root)
+#Payara Micro en Android (Root no requerido)
 
 ¿Te has preguntado que tan pequeño es Payara Micro?
 
-Al inicio comencé con un divertido experimento instalando una aplicación en mi teléfono para poder ejecutar algunos comandos linux en una terminal, pero una cosa llevó a la otra y terminé ejecutando una instancia de Payara Micro en mi celular.  A continuación te mostraré como.
+Al inicio comencé con un divertido experimento instalando una aplicación en mi teléfono para poder ejecutar algunos comandos Linux en una terminal, pero una cosa llevó a la otra y terminé ejecutando una instancia de Payara Micro. A continuación te mostraré como.
 
-Por comoidad quizas quieras relizar el proceso [usando SSH hacia tu dispositivo Android](https://termux.com/ssh.html) desde tu computadora.
+Para tu comodidad, quizas quieras relizar este experimento desde tu computadora [conectandóla vía SSH con tu dispositivo Android](https://termux.com/ssh.html).
 
-## Instalando Termux y una Distro de Linux.
-La mejor applicación para emular una terminal que encontré es  [Termux](https://play.google.com/store/apps/details?id=com.termux). Que es una aplicación Android Open-source que no solo emula una terminal android, también es un entrono Linux.
+## Instalando Termux y una Distribución Linux.
+
+La mejor applicación para emular una terminal que pude encontrar es [Termux](https://play.google.com/store/apps/details?id=com.termux), la cual es una aplicación de codigo abierto que no solo emula una terminal android, sino que provee un entorno Linux por igual.
 
 En Termux puedes instalar paquetes, ejecutar los comandos más comunes de linux o incluso progamar procesos para que se ejecuten al encender tu dispositivo, pero una de las cosas más geniales es que puedes instalar dentro de Termux algunas de las distribuciones de linux más comunes como Arch, Debia, Fedora, Kali, Ubuntu, etc gracias a las imagenes hechas por la comunidad.
 
@@ -93,4 +94,3 @@ Dependiendo de las especificaciones técnicas de tu dispositivo, el servidor pue
 Cada año mejoran los procesadores y el rendimiento de los dispositivos móviles, asi que ¿Podemos pensar a futuro en una flota distribuida de  servidores JavaEE comunicandose con distpositivos IoT con microservicios? ¡Sería Genial!
 
 ¿O quizas dispositivos cercanos compartiendo datos en tiempo real usando todos los beneficios de JavaEE? Las posibilidades son infinitas.
-
