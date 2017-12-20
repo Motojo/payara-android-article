@@ -31,7 +31,7 @@ Now that we are inside of our **Fedora 27** environment, we are going to install
 ![alt text](http://guate-jug.net/payara-android/5.png "instaling JDK")
 
 Fedora might want to update some dependencies before installing the JDK, so this might take a while.
-If you check the Java version with `java -v` after installing the JDK, and you will notice that it will fail; so don’t worry about it since it doesn't affect our goal to run an instance of Payara Micro.
+If you check the Java version with `java -version` after installing the JDK, and you will notice that it will fail; so don’t worry about it since it doesn't affect our goal to run an instance of Payara Micro.
 
 ## Downloading Payara Micro and deploying an application.
 
